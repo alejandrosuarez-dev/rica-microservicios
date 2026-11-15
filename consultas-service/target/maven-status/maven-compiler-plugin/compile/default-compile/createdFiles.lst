@@ -1,0 +1,13 @@
+com/rica/consultasservice/consultas/ProyeccionListener.class
+com/rica/consultasservice/consultas/ResumenPublicacion.class
+com/rica/consultasservice/compartido/GlobalExceptionHandler.class
+com/rica/consultasservice/compartido/RecursoNoEncontradoException.class
+com/rica/consultasservice/consultas/TopicosConfig.class
+com/rica/consultasservice/consultas/ConsultaController.class
+com/rica/consultasservice/consultas/ServicioConsultas.class
+com/rica/consultasservice/consultas/FichaRepository.class
+com/rica/consultasservice/ConsultasServiceApplication.class
+com/rica/consultasservice/consultas/FichaInvestigador.class
+com/rica/consultasservice/consultas/ProyectorFichas.class
+com/rica/consultasservice/plataforma/StatusController.class
+com/rica/consultasservice/consultas/FichaResponse.class

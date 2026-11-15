@@ -1,0 +1,13 @@
+/home/solo/Documentos/SpringBoot/rica-microservicios/consultas-service/src/main/java/com/rica/consultasservice/ConsultasServiceApplication.java
+/home/solo/Documentos/SpringBoot/rica-microservicios/consultas-service/src/main/java/com/rica/consultasservice/compartido/GlobalExceptionHandler.java
+/home/solo/Documentos/SpringBoot/rica-microservicios/consultas-service/src/main/java/com/rica/consultasservice/compartido/RecursoNoEncontradoException.java
+/home/solo/Documentos/SpringBoot/rica-microservicios/consultas-service/src/main/java/com/rica/consultasservice/consultas/ConsultaController.java
+/home/solo/Documentos/SpringBoot/rica-microservicios/consultas-service/src/main/java/com/rica/consultasservice/consultas/FichaInvestigador.java
+/home/solo/Documentos/SpringBoot/rica-microservicios/consultas-service/src/main/java/com/rica/consultasservice/consultas/FichaRepository.java
+/home/solo/Documentos/SpringBoot/rica-microservicios/consultas-service/src/main/java/com/rica/consultasservice/consultas/FichaResponse.java
+/home/solo/Documentos/SpringBoot/rica-microservicios/consultas-service/src/main/java/com/rica/consultasservice/consultas/ProyeccionListener.java
+/home/solo/Documentos/SpringBoot/rica-microservicios/consultas-service/src/main/java/com/rica/consultasservice/consultas/ProyectorFichas.java
+/home/solo/Documentos/SpringBoot/rica-microservicios/consultas-service/src/main/java/com/rica/consultasservice/consultas/ResumenPublicacion.java
+/home/solo/Documentos/SpringBoot/rica-microservicios/consultas-service/src/main/java/com/rica/consultasservice/consultas/ServicioConsultas.java
+/home/solo/Documentos/SpringBoot/rica-microservicios/consultas-service/src/main/java/com/rica/consultasservice/consultas/TopicosConfig.java
+/home/solo/Documentos/SpringBoot/rica-microservicios/consultas-service/src/main/java/com/rica/consultasservice/plataforma/StatusController.java
