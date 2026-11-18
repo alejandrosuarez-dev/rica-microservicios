@@ -43,4 +43,16 @@ class RepositorioInvestigadoresFalso implements RepositorioInvestigadores {
 
         return investigador;
     }
+
+    @Override
+    public Optional<Investigador> buscarPorCorreo(String correoInstitucional) {
+        return almacen.values().stream()
+                .filter(i -> i.getCorreoInstitucional().valor().equals(correoInstitucional))
+                .findFirst();
+    }
+
+    @Override
+    public void eliminar(Investigador investigador) {
+        almacen.remove(investigador.getId());
+    }
 }

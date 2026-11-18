@@ -11,6 +11,10 @@ public interface RepositorioInvestigadores {
 
     Optional<Investigador> buscarPorId(Long id);
 
+    Optional<Investigador> buscarPorCorreo(String correoInstitucional);
+
+    void eliminar(Investigador investigador);
+
     boolean existeCorreo(String correoInstitucional);
 
     Investigador guardar(Investigador investigador);
