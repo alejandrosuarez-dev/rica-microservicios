@@ -12,6 +12,10 @@ public interface InvestigadorUseCase {
 
     boolean existePorCorreo(String correoInstitucional);
 
+    void iniciarEliminacion(Long id);
+
+    void confirmarEliminacion(String correoInstitucional);
+
     Investigador registrar(
             String nombreCompleto,
             String correoInstitucional,

@@ -4,7 +4,46 @@ server:
 spring:
   application:
     name: investigadores-service
+
   datasource:
-    url: jdbc:postgresql://localhost:5433/rica
-    username: rica
-    password: rica
+    url: jdbc:postgresql://localhost:5432/rica
+    username: postgres
+    password: 123456
+
+  grpc:
+    server:
+      port: 9090
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: investigadores-service
+      auto-offset-reset: earliest
+
+  jpa:
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+
+logging:
+  pattern:
+    # Cada línea de log lleva el servicio y el id de correlación de la petición
+    level: "%5p [${spring.application.name},%X{correlationId:-}]"
+  level:
+    org.hibernate.orm.jdbc.bind: TRACE
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always

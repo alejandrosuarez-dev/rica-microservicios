@@ -13,7 +13,6 @@ public class Investigador {
     @Column(name = "nombre_completo", nullable = false, length = 150)
     private String nombreCompleto;
 
-    // después
     @Embedded
     @AttributeOverride(name = "valor",
             column = @Column(name = "correo_institucional", nullable = false, unique = true, length = 150))
@@ -21,6 +20,10 @@ public class Investigador {
 
     @Column(name = "grupo_investigacion", length = 150)
     private String grupoInvestigacion;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false, length = 20)
+    private EstadoInvestigador estado = EstadoInvestigador.ACTIVO;
 
     public Investigador() {
     }
@@ -62,6 +65,18 @@ public class Investigador {
 
     public void setGrupoInvestigacion(String grupoInvestigacion) {
         this.grupoInvestigacion = grupoInvestigacion;
+    }
+
+    public EstadoInvestigador getEstado() {
+        return estado;
+    }
+
+    public boolean estaEnEliminacion() {
+        return estado == EstadoInvestigador.EN_ELIMINACION;
+    }
+
+    public void marcarEnEliminacion() {
+        this.estado = EstadoInvestigador.EN_ELIMINACION;
     }
 
 }
